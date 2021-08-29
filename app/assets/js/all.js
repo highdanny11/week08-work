@@ -12,27 +12,39 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
   slidesPerView: 1,
-  spaceBetween: 15,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  spaceBetween: 8,
+  grid: {
+    rows: 3,
+    fill: 'row',
   },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
   breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 30,
-    },
     768: {
       slidesPerView: 2,
       spaceBetween: 30,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
     },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
+    }
   },
 
 });
 var swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 2,
   spaceBetween: 30,
-  loop:true,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -85,33 +97,33 @@ getElemt('.js-longbtn').addEventListener('click', (e) => {
   none(3)
 })
 // js-levle1~3 
-getElemt('.js-level1').addEventListener('click', (e)=>{
+getElemt('.js-level1').addEventListener('click', (e) => {
   e.preventDefault();
   getElemt('.js-span').textContent = '基礎'
 })
-getElemt('.js-level2').addEventListener('click', (e)=>{
+getElemt('.js-level2').addEventListener('click', (e) => {
   e.preventDefault();
   getElemt('.js-span').textContent = '中階'
 })
-getElemt('.js-level3').addEventListener('click', (e)=>{
+getElemt('.js-level3').addEventListener('click', (e) => {
   e.preventDefault();
   getElemt('.js-span').textContent = '高階'
 })
 function clear(dom) {
   if (dom === 1) {
-    getElemt('.js-long').classList.remove('border-primary','border-4');
+    getElemt('.js-long').classList.remove('border-primary', 'border-4');
     getElemt('.js-long-icon').classList.remove('d-block');
-    getElemt('.js-short').classList.remove('border-primary','border-4');
+    getElemt('.js-short').classList.remove('border-primary', 'border-4');
     getElemt('.js-short-icon').classList.remove('d-block');
   } else if (dom === 2) {
-    getElemt('.js-first').classList.remove('border-primary','border-4');
+    getElemt('.js-first').classList.remove('border-primary', 'border-4');
     getElemt('.js-first-icon').classList.remove('d-block');
-    getElemt('.js-long').classList.remove('border-primary','border-4');
+    getElemt('.js-long').classList.remove('border-primary', 'border-4');
     getElemt('.js-long-icon').classList.remove('d-block');
   } else if (dom === 3) {
-    getElemt('.js-first').classList.remove('border-primary','border-4');
+    getElemt('.js-first').classList.remove('border-primary', 'border-4');
     getElemt('.js-first-icon').classList.remove('d-block');
-    getElemt('.js-short').classList.remove('border-primary','border-4');
+    getElemt('.js-short').classList.remove('border-primary', 'border-4');
     getElemt('.js-short-icon').classList.remove('d-block');
   }
 
@@ -121,11 +133,11 @@ function none(dom) {
     getElemt('.js-first').classList.remove('d-none', 'd-lg-block');
     getElemt('.js-long').classList.add('d-none', 'd-lg-block');
     getElemt('.js-short').classList.add('d-none', 'd-lg-block');
-  }else if(dom === 2) {
+  } else if (dom === 2) {
     getElemt('.js-short').classList.remove('d-none', 'd-lg-block');
     getElemt('.js-first').classList.add('d-none', 'd-lg-block');
     getElemt('.js-long').classList.add('d-none', 'd-lg-block');
-  }else if(dom === 3) {
+  } else if (dom === 3) {
     getElemt('.js-long').classList.remove('d-none', 'd-lg-block');
     getElemt('.js-first').classList.add('d-none', 'd-lg-block');
     getElemt('.js-short').classList.add('d-none', 'd-lg-block');
