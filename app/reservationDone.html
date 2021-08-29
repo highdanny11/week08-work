@@ -1,0 +1,68 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<!-- 預約流程 -->
+<section class="container mt-md-13 mt-11 mb-9 mb-md-7 mb-lg-8">
+  <h2 class="text-secondary text-center mb-6 mb-md-4">立即預約</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="row gx-4 gx-md-116">
+        <div class="col-4">
+          <div class="rounded-16 py-3 text-center bg-light text-primary">選擇方案</div>
+        </div>
+        <div class="col-4">
+          <div class="rounded-16 py-3 text-center bg-light text-primary">填寫資料</div>
+        </div>
+        <div class="col-4">
+          <div class="rounded-16 py-3 text-center bg-primary text-white">完成預約</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 完成資訊 -->
+<section class="container pb-15">
+  <div class="text-center fs-2 text-secondary lh-1 mb-5"><i class="bi bi-check-circle"></i></div>
+  <p class="text-center text-secondary fs-7 mb-8">已完成預約，以下是您的預約資訊:</p>
+  <div class="row justify-content-center mb-6">
+    <div class="col-lg-6 col-md-8">
+      <!-- 資訊不想因為開合抖動因此寫死高度 -->
+      <div class="accordion w-100" id="accordionPanelsStayOpenExample" style="height: 320px;">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne">
+              預約資訊
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+            aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <h2 class="text-primary fw-medium fs-7 d-flex align-items-center mb-4"><span class="text-secondary fs-8 me-2">您預約的是</span>首次體驗課程-基礎</h2>
+              <ul class="text-secondary fs-8">
+                <li class="mb-2">上課預約報到日：2021/07/21</li>
+                <li class="mb-2">預約人：Joanne Chen</li>
+                <li class="mb-2">年齡：18 歲</li>
+                <li class="mb-2">性別：女</li>
+                <li class="mb-2">電子信箱：example123@gmail.com</li>
+                <li>手機號碼：0912-345-678</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center mb-lg-6">
+    <div class="col-lg-4 col-md-6">
+      <p class="text-center fs-7 text-secondary mb-2">上課注意事項</p>
+      <p class="text-secondary mb-8">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。
+        如欲更改體驗時間請提前通知我們喔！</p>
+      <a href="" class="btn btn-primary w-100 py-2 text-white">返回首頁</a>
+    </div>
+  </div>
+</section>

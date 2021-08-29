@@ -1,0 +1,29 @@
+.logo {
+  width: 96px;
+  height: 31px;
+}
+.btn-outline-primary:hover {
+  color: #fff;
+}
+.bgCoverCenter-bottom {
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.bgCoverCenter {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.offset-lg-ns2 {
+  @include make-col-offset(0);
+  @include media-breakpoint-up(lg) {
+    @include make-col-offset(-2);
+  }
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.border-current {
+  border-right: 1px solid currentColor;
+}

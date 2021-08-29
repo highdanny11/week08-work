@@ -1,0 +1,25 @@
+.surroundings {
+  &-img {
+    height: 350px;
+    @include media-breakpoint-up(md) {
+      height: 210px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 350px;
+    }
+  }
+}
+.surroundings-swiper-img {
+  @include media-breakpoint-down(sm) {
+    width: 255px !important;
+  }
+  & img {
+    height: 196px;
+  @include media-breakpoint-up(md) {
+    height: 161px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 196px;
+  }
+  }
+}
