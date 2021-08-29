@@ -14,19 +14,31 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev"
   },
   slidesPerView: 1,
-  spaceBetween: 15,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
+  spaceBetween: 8,
+  grid: {
+    rows: 3,
+    fill: 'row'
   },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
   breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 30
-    },
     768: {
       slidesPerView: 2,
-      spaceBetween: 30
+      spaceBetween: 30,
+      grid: {
+        rows: 2,
+        fill: 'row'
+      }
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      grid: {
+        rows: 2,
+        fill: 'row'
+      }
     }
   }
 });
