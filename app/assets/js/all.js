@@ -2,7 +2,7 @@ $(function () {
   console.log('Hello Bootstrap5');
 });
 var swiper1 = new Swiper(".mySwiper1", {
-  slidesPerView: 1,
+  slidesPerView: 1.2,
   spaceBetween: 30,
   loop: true,
 });

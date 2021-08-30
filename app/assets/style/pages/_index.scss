@@ -1,5 +1,6 @@
 .banner-bg {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/photo-1612157777902-5382bc6e864b.jpeg);
+  background-attachment: fixed;
   @include media-breakpoint-up(md) {
     height: 582px;
   }
