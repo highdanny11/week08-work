@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -21,7 +23,7 @@
     <li><a href="#"><i class="bi bi-instagram text-primary mx-2 fs-1"></i></a></li>
     <li><a href="#"><i class="fab fa-line text-primary fs-1"></i></a></li>
   </ul>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 position-sticky top-0" style="z-index: 100;">
     <div class="container">
       <h1 class="d-block d-lg-none"><a class="nav-link" href="index.html"><img class="obj-fill logo"
             src="./assets/images/DOYOGA-logo.png" alt=""></a></h1>
@@ -55,7 +57,9 @@
 <section class="bgCoverCenter-bottom banner-bg d-flex align-items-center">
   <div class="container">
     <div class="row">
-      <div class="col-md-5 col-12 offset-md-1">
+      <div class="col-md-5 col-12 offset-md-1"
+          data-aos="fade-right"
+          data-aos-duration="1000">
         <h3 class="fs-5 fs-md-3 fw-medium text-success">
           <span class="fs-8 fw-normal">健身輕時尚</span><br>
           DOYOGA，做你的瑜珈
@@ -63,8 +67,10 @@
         <p class="text-success fs-7 fs-md-6 mb-4">
           多給自己一點時間享受靜謐，傾聽內心的聲音。
         </p>
-        <a class="btn btn-light text-success py-2 px-4 fs-7" href="reservation.html">立即預約</a>
-        <a class="btn btn-primary text-white py-2 px-4 fs-7" href="course.html">課程介紹</a>
+        <a class="btn btn-light text-success py-2 px-4 fs-7" data-aos="fade-right" data-aos-duration="1200"
+        href="reservation.html">立即預約</a>
+        <a class="btn btn-primary text-white py-2 px-4 fs-7" data-aos="fade-right" data-aos-duration="1000"
+        href="course.html">課程介紹</a>
       </div>
     </div>
   </div>
@@ -77,22 +83,43 @@
     <div class="col-md-4 mb-4 mb-md-0">
       <div class="feel-img bgCoverCenter d-flex flex-column-reverse rounded-16 p-6 p-md-4 p-lg-6"
         style="background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/photo-1593810450967-f9c42742e326.jpeg);">
-        <p class="text-white">每一個動作，都融入運動解剖學的的觀點強調以身體的中心線為出發點。</p>
-        <p class="text-white fs-7 fs-md-8">整體健身</p>
+        <p class="text-white"
+        data-aos="zoom-in-down"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-once="true">每一個動作，都融入運動解剖學的的觀點強調以身體的中心線為出發點。</p>
+        <p class="text-white fs-7 fs-md-8"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-once="true">整體健身</p>
       </div>
     </div>
     <div class="col-md-4 mb-4 mb-md-0">
       <div class="feel-img bgCoverCenter d-flex flex-column-reverse rounded-16 p-6 p-md-4 p-lg-6"
         style="background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/photo-1593810451137-5dc55105dace.jpeg);">
-        <p class="text-white">調節全身系統、改善血液循環、減壓養心、釋放身心，達到修心養性的目的</p>
-        <p class="text-white fs-7 fs-md-8">減壓放鬆</p>
+        <p class="text-white"
+        data-aos="zoom-in-down"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-once="true">調節全身系統、改善血液循環、減壓養心、釋放身心，達到修心養性的目的</p>
+        <p class="text-white fs-7 fs-md-8"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-once="true">減壓放鬆</p>
       </div>
     </div>
     <div class="col-md-4">
       <div class="feel-img bgCoverCenter d-flex flex-column-reverse rounded-16 p-6 p-md-4 p-lg-6"
         style="background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/photo-1599901860904-17e6ed7083a0.jpeg);">
-        <p class="text-white">幫助強化背部與腹部的核心肌群，增進我們身體穩定度以及保持良好體態。</p>
-        <p class="text-white fs-7 fs-md-8">局部雕塑</p>
+        <p class="text-white"
+        data-aos="zoom-in-down"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-once="true">幫助強化背部與腹部的核心肌群，增進我們身體穩定度以及保持良好體態。</p>
+        <p class="text-white fs-7 fs-md-8"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-once="true">局部雕塑</p>
       </div>
     </div>
   </div>
@@ -102,43 +129,61 @@
   <div class="container">
     <div class="row pb-11 pt-8 py-lg-13">
       <div class="col-lg-6 d-none d-lg-block">
-        <div class="teacher-inside-img bgCoverCenter h-100 rounded-16"></div>
+        <div class="teacher-inside-img bgCoverCenter h-100 rounded-16"
+        data-aos="fade-right"
+        data-aos-once="true"
+        data-aos-duration="1000"></div>
       </div>
       <div class="col-12 col-lg-6 d-flex justify-content-center flex-column align-items-center align-items-lg-start">
-        <h2 class="text-secondary fw-medium fs-5 mb-1">頂尖師資、專業教學</h2>
-        <p class="text-primary fs-7 w-100 w-md-60 w-lg-100 mb-6">強力師資，經歷豐富，協會認證。運用引導式教學，針對不同需求的人制定專屬課程。</p>
+        <h2 class="text-secondary fw-medium fs-5 mb-1"
+        data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">頂尖師資、專業教學</h2>
+        <p class="text-primary fs-7 w-100 w-md-60 w-lg-100 mb-6"
+        data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">強力師資，經歷豐富，協會認證。運用引導式教學，針對不同需求的人制定專屬課程。</p>
         <div class="row">
           <div class="col-md-11 col-lg-12 mb-4 offset-md-1 offset-lg-0">
-            <div class="d-flex align-items-center bg-white text-success rounded-16 p-4 px-md-11 py-md-10 offset-lg-ns2">
+            <div class="d-flex align-items-center bg-white text-success rounded-16 p-4 px-md-11 py-md-10 offset-lg-ns2"
+            data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
               <img
                 src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/teacher-1.png"
-                alt="" class="rounded-circle me-4 me-md-5 teacher-personalImg">
+                alt="" class="rounded-circle me-4 me-md-5 teacher-personalImg"
+                data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
               <div class="d-flex flex-column text-success">
-                <h4 class="fs-7">Carol Tang 老師</h4>
-                <p>教學經歷 10 年</p>
-                <p>瑜珈讓我重新認識自己的身體，也讓我有了不一樣的人生。</p>
+                <h4 class="fs-7"
+                data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">Carol Tang 老師</h4>
+                <p
+                data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">教學經歷 10 年</p>
+                <p
+                data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">瑜珈讓我重新認識自己的身體，也讓我有了不一樣的人生。</p>
               </div>
             </div>
           </div>
           <div class="col-md-9 col-lg-12 mb-4 offset-md-3 offset-lg-0">
-            <div class="d-flex align-items-center bg-white rounded-16 p-4 px-md-11 py-md-10">
+            <div class="d-flex align-items-center bg-white rounded-16 p-4 px-md-11 py-md-10"
+            data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
               <img
                 src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/teacher-2.png"
-                alt="" class="rounded-circle me-4 me-md-5 teacher-personalImg">
-              <div class="d-flex flex-column text-success ">
-                <h4 class="fs-7">Kanae 老師</h4>
-                <p>教學經歷 10 年</p>
+                alt="" class="rounded-circle me-4 me-md-5 teacher-personalImg"
+                data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+              <div class="d-flex flex-column text-success">
+                <h4 class="fs-7"
+                data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">Kanae 老師</h4>
+                <p
+                data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">教學經歷 10 年</p>
               </div>
             </div>
           </div>
-          <div class="col-md-9 col-lg-12 mb-4 offset-md-3 offset-lg-0">
-            <div class="d-flex align-items-center bg-white rounded-16 p-4 px-md-11 py-md-10">
+          <div class="col-md-9 col-lg-12 mb-4 offset-md-3 offset-lg-0"
+          data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+            <div class="d-flex align-items-center bg-white rounded-16 p-4 px-md-11 py-md-10"
+            data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
               <img
                 src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/teacher-3.png"
-                alt="" class="rounded-circle me-4 me-md-5 teacher-personalImg">
-              <div class="d-flex flex-column text-success ">
-                <h4 class="fs-7">Asa Ifrit 老師</h4>
-                <p>教學經歷 10 年</p>
+                alt="" class="rounded-circle me-4 me-md-5 teacher-personalImg"
+                data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+              <div class="d-flex flex-column text-success">
+                <h4 class="fs-7"
+                data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">Asa Ifrit 老師</h4>
+                <p data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">教學經歷 10 年</p>
               </div>
             </div>
           </div>
@@ -155,25 +200,31 @@
         <div class="col-6 col-md-8">
           <img
             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/carl-barcelo-nqUHQkuVj3c-unsplash.jpg"
-            alt="" class="obj-cover w-100 rounded-16 space-asideImg">
+            alt="" class="obj-cover w-100 rounded-16 space-asideImg"
+            data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
         </div>
         <div class="col-6 col-md-4">
           <div class="d-flex flex-column justify-content-between h-100">
             <img
               src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/white%20round%20table%20near%20brown%20wooden%20chair.jpg"
-              alt="" class="obj-cover w-100 rounded-16 space-asideImg-item">
+              alt="" class="obj-cover w-100 rounded-16 space-asideImg-item"
+              data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
             <img
               src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20blue%20denim%20jeans%20doing%20yoga.jpg"
-              alt="" class="obj-cover w-100 rounded-16 space-asideImg-item d-none d-md-block">
+              alt="" class="obj-cover w-100 rounded-16 space-asideImg-item d-none d-md-block"
+              data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
           </div>
         </div>
       </div>
     </div>
     <div class="col-md-6 order-1 order-md-2">
       <div class="d-flex flex-column justify-content-center h-100 text-secondary">
-        <h2 class="fw-medium fs-5 mb-1">舒適空間、靜心放鬆</h2>
-        <p class="fs-7 text-primary mb-md-4 mb-lg-6">我們都渴望平靜安穩的生活，擁有一處能夠靜心的角落，安撫每天繁雜忙碌的心。</p>
-        <a href="surroundings.html" class="d-block link-secondary mb-4 mb-md-0">環境介紹<i
+        <h2 class="fw-medium fs-5 mb-1"
+        data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">舒適空間、靜心放鬆</h2>
+        <p class="fs-7 text-primary mb-md-4 mb-lg-6"
+        data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">我們都渴望平靜安穩的生活，擁有一處能夠靜心的角落，安撫每天繁雜忙碌的心。</p>
+        <a href="surroundings.html" class="d-block link-secondary mb-4 mb-md-0"
+        data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">環境介紹<i
             class="bi bi-arrow-right ms-3"></i></a>
       </div>
     </div>
@@ -185,14 +236,18 @@
     <div class="row py-11 py-md-12 py-lg-13 justify-content-center">
       <div class="col-md-6 col-lg-5">
         <div class="d-flex flex-column justify-content-center text-secondary h-100">
-          <h2 class="fw-medium fs-5 mb-1">精心設計、課程多元</h2>
-          <p class="text-primary fs-7 text-primary mb-4 mb-lg-6">教師帶領多元課程，釋放壓力，與身心常見的緊繃不適溫柔和解。</p>
-          <a href="course.html" class="d-block link-secondary mb-4 mb-md-0">課程介紹<i
+          <h2 class="fw-medium fs-5 mb-1"
+          data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">精心設計、課程多元</h2>
+          <p class="text-primary fs-7 text-primary mb-4 mb-lg-6"
+          data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">教師帶領多元課程，釋放壓力，與身心常見的緊繃不適溫柔和解。</p>
+          <a href="course.html" class="d-block link-secondary mb-4 mb-md-0"
+          data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">課程介紹<i
               class="bi bi-arrow-right ms-3"></i></a>
         </div>
       </div>
-      <div class="col-md-6 col-lg-5">
-        <div class="swiper mySwiper1 d-lg-block d-none">
+      <div class="col-md-6 col-lg-6">
+        <div class="swiper mySwiper1 d-lg-block d-none"
+        data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
           <div class="swiper-wrapper">
             <div class="swiper-slide ratio ratio-1x1 rounded-16">
               <img
@@ -201,16 +256,16 @@
             </div>
             <div class="swiper-slide ratio ratio-1x1 rounded-16"><img
                 src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20black%20leggings%20doing%20yoga.jpg"
-                alt="" class="rounded-16 obj-cover w-100" style="height: 445px;"></div>
+                alt="" class="rounded-16 obj-cover w-100"></div>
             <div class="swiper-slide ratio ratio-1x1 rounded-16">
               <img
                 src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg"
-                alt="" class="rounded-16 obj-cover w-100" style="height: 445px;">
+                alt="" class="rounded-16 obj-cover w-100">
             </div>
             <div class="swiper-slide ratio ratio-1x1 rounded-16">
               <img
                 src="https://images.unsplash.com/photo-1574454941059-9408c4d3f268?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                class="rounded-16 obj-cover w-100" style="height: 445px;" alt="">
+                class="rounded-16 obj-cover w-100" alt="">
             </div>
           </div>
         </div>
@@ -242,11 +297,12 @@
 </section>
 <!-- 方案選擇 -->
 <section class="container pt-8 pb-11 pt-md-10 pb-md-12 pb-lg-13">
-  <h2 class="text-secondary text-medium mb-1 fs-5"></h2>
-  <p class="text-primary fs-7 md-6 mb-lg-8"></p>
+  <h2 class="text-secondary fw-medium mb-1 fs-5 text-center">方案選擇</h2>
+  <p class="text-primary fs-7 md-6 mb-lg-8 text-center">DOYOGA 可以帶給你...</p>
   <div class="row">
     <div class="col-lg-4 mb-4 mb-md-6">
-      <div class="card">
+      <div class="card"
+      data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
         <div class="row flex-lg-column">
           <div class="d-block col-md-6 col-lg-12">
             <img class="card-img-top obj-cover"
@@ -266,7 +322,8 @@
       </div>
     </div>
     <div class="col-lg-4 mb-4 mb-md-6">
-      <div class="card">
+      <div class="card"
+      data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
         <div class="row flex-lg-column">
           <div class="d-block col-md-6 col-lg-12">
             <img class="card-img-top obj-cover"
@@ -286,7 +343,8 @@
       </div>
     </div>
     <div class="col-lg-4">
-      <div class="card">
+      <div class="card"
+      data-aos="fade-up" data-aos-duration="1500" data-aos-once="false">
         <div class="row flex-lg-column">
           <div class="d-block col-md-6 col-lg-12">
             <img class="card-img-top obj-cover"
@@ -315,7 +373,7 @@
     </h2>
     <div class=" mySwiper swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide rounded-16">
+        <div class="swiper-slide rounded-16 order-0 my-0">
           <div class="d-flex align-items-center bg-white rounded-16 p-4 w-100">
             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/user-1.png"
               alt="" class="rounded-circle me-md-5 me-4">
@@ -327,60 +385,60 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide rounded-16">
+        <div class="swiper-slide rounded-16 order-md-1 order-2 mt-2 mt-md-0">
           <div class="d-flex align-items-center bg-white rounded-16 p-4 w-100">
             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/user-2.png"
               alt="" class="rounded-circle me-md-5 me-4">
             <div class="d-flex flex-column">
-              <h5 class="text-secondary fs-8">Joanne<span class="fs-9 ms-2">Oct 17 2020</span></h5>
+              <h5 class="text-secondary fs-8">穎旻<span class="fs-9 ms-2">Oct 17 2020</span></h5>
               <div class="text-primary mb-2"><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
                   class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i></div>
               <p class="text-secondary">服務很好、設備優良！</p>
             </div>
           </div>
         </div>
-        <div class="swiper-slide rounded-16">
+        <div class="swiper-slide rounded-16 order-md-2 order-4 mt-2 mt-md-0">
           <div class="d-flex align-items-center bg-white rounded-16 p-4 w-100">
             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/user-3.png"
               alt="" class="rounded-circle me-md-5 me-4">
             <div class="d-flex flex-column">
-              <h5 class="text-secondary fs-8">Joanne<span class="fs-9 ms-2">Oct 17 2020</span></h5>
+              <h5 class="text-secondary fs-8">子琪<span class="fs-9 ms-2">Oct 17 2020</span></h5>
               <div class="text-primary mb-2"><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
                   class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i></div>
               <p class="text-secondary">服務很好、設備優良！</p>
             </div>
           </div>
         </div>
-        <div class="swiper-slide rounded-16 mt-md-4 ">
+        <div class="swiper-slide rounded-16 order-md-3 order-1 my-0 mt-md-4">
           <div class="d-flex align-items-center bg-white rounded-16 p-4 w-100">
             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/user-4.png"
               alt="" class="rounded-circle me-md-5 me-4">
             <div class="d-flex flex-column">
-              <h5 class="text-secondary fs-8">Joanne<span class="fs-9 ms-2">Oct 17 2020</span></h5>
+              <h5 class="text-secondary fs-8">葉子<span class="fs-9 ms-2">Oct 17 2020</span></h5>
               <div class="text-primary mb-2"><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
                   class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i></div>
               <p class="text-secondary">服務很好、設備優良！</p>
             </div>
           </div>
         </div>
-        <div class="swiper-slide rounded-16 mt-md-4 ">
+        <div class="swiper-slide rounded-16 order-md-4 order-3 mt-2 mt-md-4">
           <div class="d-flex align-items-center bg-white rounded-16 p-4 w-100">
             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/user-5.png"
               alt="" class="rounded-circle me-md-5 me-4">
             <div class="d-flex flex-column">
-              <h5 class="text-secondary fs-8">Joanne<span class="fs-9 ms-2">Oct 17 2020</span></h5>
+              <h5 class="text-secondary fs-8">Ray<span class="fs-9 ms-2">Oct 17 2020</span></h5>
               <div class="text-primary mb-2"><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
                   class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i></div>
               <p class="text-secondary">服務很好、設備優良！</p>
             </div>
           </div>
         </div>
-        <div class="swiper-slide rounded-16 mt-md-4 ">
+        <div class="swiper-slide rounded-16 order-md-5 order-5 mt-2 mt-md-4">
           <div class="d-flex align-items-center bg-white rounded-16 p-4 w-100">
             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/uset-6.png"
               alt="" class="rounded-circle me-md-5 me-4">
             <div class="d-flex flex-column">
-              <h5 class="text-secondary fs-8">Joanne<span class="fs-9 ms-2">Oct 17 2020</span></h5>
+              <h5 class="text-secondary fs-8">俊儀<span class="fs-9 ms-2">Oct 17 2020</span></h5>
               <div class="text-primary mb-2"><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
                   class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i></div>
               <p class="text-secondary">服務很好、設備優良！</p>
@@ -429,6 +487,10 @@
         </ul>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>

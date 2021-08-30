@@ -19881,6 +19881,41 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   content: '';
 }
 
+.share .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.share .swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.share .swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.share .swiper-button-next, .share .swiper-button-prev {
+  color: #907A7B;
+}
+
+.share .swiper-button-next:after, .share .swiper-button-prev:after {
+  content: '';
+}
+
 .navbar-light .navbar-toggler {
   border: none;
 }
@@ -19891,6 +19926,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .banner-bg {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/photo-1612157777902-5382bc6e864b.jpeg);
+  background-attachment: fixed;
   height: 560px;
 }
 
