@@ -64,51 +64,54 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
   },
 });
-console.log(document.body.clientWidth)
+// console.log(document.body.clientWidth)
 const getElemt = (elemt) => document.querySelector(elemt);
-// js-first js-firstbtn js-first-icon
-getElemt('.js-firstbtn').addEventListener('click', (e) => {
-  e.preventDefault();
-  getElemt('.js-first').classList.toggle('border-primary');
-  getElemt('.js-first').classList.toggle('border-4');
-  getElemt('.js-first-icon').classList.toggle('d-block');
-  getElemt('.js-text').textContent = '首次體驗課程-'
-  clear(1);
-  none(1)
-})
-// js-short js-shortbtn js-short-icon
-getElemt('.js-shortbtn').addEventListener('click', (e) => {
-  e.preventDefault();
-  getElemt('.js-short').classList.toggle('border-primary');
-  getElemt('.js-short').classList.toggle('border-4');
-  getElemt('.js-short-icon').classList.toggle('d-block');
-  getElemt('.js-text').textContent = '短期體驗課程-'
-  clear(2)
-  none(2)
-})
-// js-long js-longbtn js-long-icon
-getElemt('.js-longbtn').addEventListener('click', (e) => {
-  e.preventDefault();
-  getElemt('.js-long').classList.toggle('border-primary');
-  getElemt('.js-long').classList.toggle('border-4');
-  getElemt('.js-long-icon').classList.toggle('d-block');
-  getElemt('.js-text').textContent = '長期體驗課程-'
-  clear(3)
-  none(3)
-})
-// js-levle1~3 
-getElemt('.js-level1').addEventListener('click', (e) => {
-  e.preventDefault();
-  getElemt('.js-span').textContent = '基礎'
-})
-getElemt('.js-level2').addEventListener('click', (e) => {
-  e.preventDefault();
-  getElemt('.js-span').textContent = '中階'
-})
-getElemt('.js-level3').addEventListener('click', (e) => {
-  e.preventDefault();
-  getElemt('.js-span').textContent = '高階'
-})
+if (getElemt('.js-firstbtn')) {
+  // js-first js-firstbtn js-first-icon
+  getElemt('.js-firstbtn').addEventListener('click', (e) => {
+    e.preventDefault();
+    getElemt('.js-first').classList.toggle('border-primary');
+    getElemt('.js-first').classList.toggle('border-4');
+    getElemt('.js-first-icon').classList.toggle('d-block');
+    getElemt('.js-text').textContent = '首次體驗課程-'
+    clear(1);
+    none(1)
+  })
+  // js-short js-shortbtn js-short-icon
+  getElemt('.js-shortbtn').addEventListener('click', (e) => {
+    e.preventDefault();
+    getElemt('.js-short').classList.toggle('border-primary');
+    getElemt('.js-short').classList.toggle('border-4');
+    getElemt('.js-short-icon').classList.toggle('d-block');
+    getElemt('.js-text').textContent = '短期體驗課程-'
+    clear(2)
+    none(2)
+  })
+  // js-long js-longbtn js-long-icon
+  getElemt('.js-longbtn').addEventListener('click', (e) => {
+    e.preventDefault();
+    getElemt('.js-long').classList.toggle('border-primary');
+    getElemt('.js-long').classList.toggle('border-4');
+    getElemt('.js-long-icon').classList.toggle('d-block');
+    getElemt('.js-text').textContent = '長期體驗課程-'
+    clear(3)
+    none(3)
+  })
+  // js-levle1~3 
+  getElemt('.js-level1').addEventListener('click', (e) => {
+    e.preventDefault();
+    getElemt('.js-span').textContent = '基礎'
+  })
+  getElemt('.js-level2').addEventListener('click', (e) => {
+    e.preventDefault();
+    getElemt('.js-span').textContent = '中階'
+  })
+  getElemt('.js-level3').addEventListener('click', (e) => {
+    e.preventDefault();
+    getElemt('.js-span').textContent = '高階'
+  })
+  render();
+}
 function clear(dom) {
   if (dom === 1) {
     getElemt('.js-long').classList.remove('border-primary', 'border-4');
@@ -153,4 +156,3 @@ function render() {
   clear(1);
   none(1)
 }
-render();
