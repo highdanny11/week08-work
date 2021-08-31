@@ -10,7 +10,7 @@ $utilities: map-merge(
       property: transition,
       class: transition,
       values: (
-        ease-in:all 0.6s ease-in,
+        ease-in:all 0.5s ease-in,
         
       ),
     ),
@@ -86,6 +86,7 @@ $utilities: map-merge(
       (
         property: box-shadow,
         class: shadow,
+        state: hover,
         values: (
           null: $box-shadow,
           sm: $box-shadow-sm,
@@ -635,6 +636,7 @@ $utilities: map-merge(
       (
         property: color,
         class: text,
+        state: hover,
         values:
           map-merge(
             $theme-colors,
