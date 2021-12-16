@@ -9,17 +9,17 @@ current: index
   <h2 class="text-secondary text-center mb-6 mb-md-4">立即預約</h2>
   <div class="row justify-content-center">
     <div class="col-md-6">
-      <div class="row gx-4 gx-md-116">
-        <div class="col-4">
+      <ol class="row gx-4 gx-md-116">
+        <li class="col-4">
           <div class="rounded-16 py-3 text-center bg-light text-primary">選擇方案</div>
-        </div>
-        <div class="col-4">
+        </li>
+        <li class="col-4">
           <div class="rounded-16 py-3 text-center bg-primary text-white">填寫資料</div>
-        </div>
-        <div class="col-4">
+        </li>
+        <li class="col-4">
           <div class="rounded-16 py-3 text-center bg-light text-primary">完成預約</div>
-        </div>
-      </div>
+        </li>
+      </ol>
     </div>
   </div>
 </section>
@@ -47,19 +47,19 @@ current: index
           <div class="row row-cols-3 gx-0 mb-4">
             <div class="col">
               <div class="form-check form-check">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <input class="form-check-input" name="life" type="checkbox" id="inlineCheckbox1" value="option1">
                 <label class="form-check-label text-success" for="inlineCheckbox1">肌耐力不足</label>
               </div>
             </div>
             <div class="col">
               <div class="form-check form-check">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <input class="form-check-input" name="life" type="checkbox" id="inlineCheckbox2" value="option2">
                 <label class="form-check-label text-success" for="inlineCheckbox2">柔軟度不佳</label>
               </div>
             </div>
             <div class="col">
               <div class="form-check form-check">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <input class="form-check-input" name="life" type="checkbox" id="inlineCheckbox3" value="option3">
                 <label class="form-check-label text-success" for="inlineCheckbox3">壓力大</label>
               </div>
             </div>
@@ -67,19 +67,19 @@ current: index
           <div class="row row-cols-3 gx-0">
             <div class="col">
               <div class="form-check form-check">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option3">
+                <input class="form-check-input" name="life" type="checkbox" id="inlineCheckbox4" value="option3">
                 <label class="form-check-label text-success" for="inlineCheckbox4">姿勢不正</label>
               </div>
             </div>
             <div class="col">
               <div class="form-check form-check">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option3">
+                <input class="form-check-input" name="life" type="checkbox" id="inlineCheckbox5" value="option3">
                 <label class="form-check-label text-success" for="inlineCheckbox5">睡眠品質差</label>
               </div>
             </div>
             <div class="col">
               <div class="form-check form-check">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option3">
+                <input class="form-check-input" name="life" type="checkbox" id="inlineCheckbox6" value="option3">
                 <label class="form-check-label text-success" for="inlineCheckbox6">注意力不足</label>
               </div>
             </div>
@@ -125,7 +125,7 @@ current: index
         <div class="mb-8">
           <p class="text-success mb-1">4. 上課預約報到日</p>
           <p class="text-success mb-2">若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</p>
-            <input type="text" class="d-block fs-8" placeholder="MM/DD/YYYY" style="width:118px;">
+            <input type="date" class="d-block fs-8" placeholder="MM/DD/YYYY" style="width:118px;">
         </div>
         <!-- Q5 -->
         <div class="mb-lg-6 mb-md-0 mb-2">

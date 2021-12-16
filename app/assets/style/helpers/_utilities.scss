@@ -99,6 +99,7 @@ $utilities: map-merge(
     "position":
       (
         property: position,
+        responsive: true,
         values: static relative absolute fixed sticky,
       ),
     "top": (

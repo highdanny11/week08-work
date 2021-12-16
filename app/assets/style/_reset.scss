@@ -1,7 +1,7 @@
 html,
 body {
   // 套用aos會產生x軸
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(sm) {
     overflow-x: hidden;
   }
 }
@@ -16,7 +16,4 @@ p {
 }
 a {
   text-decoration: none;
-}
-.overflow-md-auto::-webkit-scrollbar {
-  display: none;
 }
