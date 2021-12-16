@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 position-sticky top-0" style="z-index: 100;">
     <div class="container">
       <h1 class="d-block d-lg-none"><a class="nav-link" href="index.html"><img class="obj-fill logo"
@@ -50,7 +50,8 @@
   </nav>
   <ul class="align-items-center d-none d-lg-flex position-fixed flex-column top-50 end-0" style="z-index: 9999;">
     <li class="transition-ease-in scale-12-hover"><a href="#"><i class="bi bi-facebook text-primary fs-1"></i></a></li>
-    <li class="transition-ease-in scale-12-hover"><a href="#"><i class="bi bi-instagram text-primary mx-2 fs-1"></i></a></li>
+    <li class="transition-ease-in scale-12-hover"><a href="#"><i class="bi bi-instagram text-primary mx-2 fs-1"></i></a>
+    </li>
     <li class="transition-ease-in scale-12-hover"><a href="#"><i class="fab fa-line text-primary fs-1"></i></a></li>
   </ul>
   <!-- 聯絡我們 -->
@@ -78,7 +79,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-10 col-lg-5">
+    <from class="col-md-10 col-lg-5" action="index.html" method="POST">
       <div class="bg-light text-secondary p-8 rounded-16">
         <h3 class="fs-7 mb-4 mb-md-6">意見回饋&問題詢問</h3>
         <div class="mb-4">
@@ -91,7 +92,7 @@
         </div>
         <div class="mb-4">
           <label for="exampleFormControlInput1" class="form-label">手機號碼</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="0912-345-678">
+          <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="0912-345-678">
         </div>
         <div class="mb-6">
           <label for="exampleFormControlTextarea1" class="form-label">意見回饋</label>
@@ -101,7 +102,7 @@
           <a href="#" class="btn btn-primary text-white">送出</a>
         </div>
       </div>
-    </div>
+    </from>
   </div>
 </section>
     <footer class="bg-secondary text-white">
@@ -124,17 +125,22 @@
         <div class="d-flex justify-content-between align-content-center w-100 mb-2">
           <img src="./assets/images/logo.png" alt="" class="obj-fill logo">
           <ul class="d-flex align-items-center">
-            <li class="transition-ease-in scale-12-hover"><a href="#" class="d-block"><i class="bi bi-facebook text-white fs-6"></i></a></li>
-            <li class="transition-ease-in scale-12-hover"><a href="#" class="d-block"><i class="bi bi-instagram text-white mx-2 fs-6"></i></a></li>
-            <li class="transition-ease-in scale-12-hover"><a href="#" class="d-block"><i class="fab fa-line text-white fs-5"></i></a></li>
+            <li class="transition-ease-in scale-12-hover"><a href="#" class="d-block"><i
+                  class="bi bi-facebook text-white fs-6"></i></a></li>
+            <li class="transition-ease-in scale-12-hover"><a href="#" class="d-block"><i
+                  class="bi bi-instagram text-white mx-2 fs-6"></i></a></li>
+            <li class="transition-ease-in scale-12-hover"><a href="#" class="d-block"><i
+                  class="fab fa-line text-white fs-5"></i></a></li>
           </ul>
         </div>
-        <ul class="d-flex flex-column">
-          <li class="mb-2"><a href="course.html" class="text-white text-primary-hover">課程介紹</a></li>
-          <li class="mb-2"><a href="surroundings.html" class="text-white text-primary-hover">瑜珈空間</a></li>
-          <li class="d-flex flex-wrap"><a href="curriculum.html" class="text-white text-primary-hover w-100 w-md-auto">當月課表</a><a href="#"
-              class="text-white flex-md-grow-1 text-center">© 2021. All Rights Reserved.</a></li>
-        </ul>
+        <div class="position-relative">
+          <ul>
+            <li class="mb-2"><a href="course.html" class="text-white text-primary-hover">課程介紹</a></li>
+            <li class="mb-2"><a href="surroundings.html" class="text-white text-primary-hover">瑜珈空間</a></li>
+            <li><a href="curriculum.html"class="text-white text-primary-hover w-100 w-md-auto">當月課表</a></li>
+          </ul>
+          <a href="#" class="text-white d-block position-static position-md-absolute bottom-0 text-start text-md-center w-100">© 2021. All Rights Reserved.</a>
+        </div>
       </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 position-sticky top-0" style="z-index: 100;">
     <div class="container">
       <h1 class="d-block d-lg-none"><a class="nav-link" href="index.html"><img class="obj-fill logo"
@@ -50,7 +50,8 @@
   </nav>
   <ul class="align-items-center d-none d-lg-flex position-fixed flex-column top-50 end-0" style="z-index: 9999;">
     <li class="transition-ease-in scale-12-hover"><a href="#"><i class="bi bi-facebook text-primary fs-1"></i></a></li>
-    <li class="transition-ease-in scale-12-hover"><a href="#"><i class="bi bi-instagram text-primary mx-2 fs-1"></i></a></li>
+    <li class="transition-ease-in scale-12-hover"><a href="#"><i class="bi bi-instagram text-primary mx-2 fs-1"></i></a>
+    </li>
     <li class="transition-ease-in scale-12-hover"><a href="#"><i class="fab fa-line text-primary fs-1"></i></a></li>
   </ul>
   <!-- 預約流程 -->
@@ -58,17 +59,17 @@
   <h2 class="text-secondary text-center mb-6 mb-md-4">立即預約</h2>
   <div class="row justify-content-center">
     <div class="col-md-6">
-      <div class="row gx-4 gx-md-116">
-        <div class="col-4">
+      <ol class="row gx-4 gx-md-116">
+        <li class="col-4">
           <div class="rounded-16 py-3 text-center bg-light text-primary">選擇方案</div>
-        </div>
-        <div class="col-4">
+        </li>
+        <li class="col-4">
           <div class="rounded-16 py-3 text-center bg-primary text-white">填寫資料</div>
-        </div>
-        <div class="col-4">
+        </li>
+        <li class="col-4">
           <div class="rounded-16 py-3 text-center bg-light text-primary">完成預約</div>
-        </div>
-      </div>
+        </li>
+      </ol>
     </div>
   </div>
 </section>
@@ -96,19 +97,19 @@
           <div class="row row-cols-3 gx-0 mb-4">
             <div class="col">
               <div class="form-check form-check">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <input class="form-check-input" name="life" type="checkbox" id="inlineCheckbox1" value="option1">
                 <label class="form-check-label text-success" for="inlineCheckbox1">肌耐力不足</label>
               </div>
             </div>
             <div class="col">
               <div class="form-check form-check">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <input class="form-check-input" name="life" type="checkbox" id="inlineCheckbox2" value="option2">
                 <label class="form-check-label text-success" for="inlineCheckbox2">柔軟度不佳</label>
               </div>
             </div>
             <div class="col">
               <div class="form-check form-check">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <input class="form-check-input" name="life" type="checkbox" id="inlineCheckbox3" value="option3">
                 <label class="form-check-label text-success" for="inlineCheckbox3">壓力大</label>
               </div>
             </div>
@@ -116,19 +117,19 @@
           <div class="row row-cols-3 gx-0">
             <div class="col">
               <div class="form-check form-check">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option3">
+                <input class="form-check-input" name="life" type="checkbox" id="inlineCheckbox4" value="option3">
                 <label class="form-check-label text-success" for="inlineCheckbox4">姿勢不正</label>
               </div>
             </div>
             <div class="col">
               <div class="form-check form-check">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option3">
+                <input class="form-check-input" name="life" type="checkbox" id="inlineCheckbox5" value="option3">
                 <label class="form-check-label text-success" for="inlineCheckbox5">睡眠品質差</label>
               </div>
             </div>
             <div class="col">
               <div class="form-check form-check">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option3">
+                <input class="form-check-input" name="life" type="checkbox" id="inlineCheckbox6" value="option3">
                 <label class="form-check-label text-success" for="inlineCheckbox6">注意力不足</label>
               </div>
             </div>
@@ -174,7 +175,7 @@
         <div class="mb-8">
           <p class="text-success mb-1">4. 上課預約報到日</p>
           <p class="text-success mb-2">若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</p>
-            <input type="text" class="d-block fs-8" placeholder="MM/DD/YYYY" style="width:118px;">
+            <input type="date" class="d-block fs-8" placeholder="MM/DD/YYYY" style="width:118px;">
         </div>
         <!-- Q5 -->
         <div class="mb-lg-6 mb-md-0 mb-2">
@@ -231,17 +232,22 @@
         <div class="d-flex justify-content-between align-content-center w-100 mb-2">
           <img src="./assets/images/logo.png" alt="" class="obj-fill logo">
           <ul class="d-flex align-items-center">
-            <li class="transition-ease-in scale-12-hover"><a href="#" class="d-block"><i class="bi bi-facebook text-white fs-6"></i></a></li>
-            <li class="transition-ease-in scale-12-hover"><a href="#" class="d-block"><i class="bi bi-instagram text-white mx-2 fs-6"></i></a></li>
-            <li class="transition-ease-in scale-12-hover"><a href="#" class="d-block"><i class="fab fa-line text-white fs-5"></i></a></li>
+            <li class="transition-ease-in scale-12-hover"><a href="#" class="d-block"><i
+                  class="bi bi-facebook text-white fs-6"></i></a></li>
+            <li class="transition-ease-in scale-12-hover"><a href="#" class="d-block"><i
+                  class="bi bi-instagram text-white mx-2 fs-6"></i></a></li>
+            <li class="transition-ease-in scale-12-hover"><a href="#" class="d-block"><i
+                  class="fab fa-line text-white fs-5"></i></a></li>
           </ul>
         </div>
-        <ul class="d-flex flex-column">
-          <li class="mb-2"><a href="course.html" class="text-white text-primary-hover">課程介紹</a></li>
-          <li class="mb-2"><a href="surroundings.html" class="text-white text-primary-hover">瑜珈空間</a></li>
-          <li class="d-flex flex-wrap"><a href="curriculum.html" class="text-white text-primary-hover w-100 w-md-auto">當月課表</a><a href="#"
-              class="text-white flex-md-grow-1 text-center">© 2021. All Rights Reserved.</a></li>
-        </ul>
+        <div class="position-relative">
+          <ul>
+            <li class="mb-2"><a href="course.html" class="text-white text-primary-hover">課程介紹</a></li>
+            <li class="mb-2"><a href="surroundings.html" class="text-white text-primary-hover">瑜珈空間</a></li>
+            <li><a href="curriculum.html"class="text-white text-primary-hover w-100 w-md-auto">當月課表</a></li>
+          </ul>
+          <a href="#" class="text-white d-block position-static position-md-absolute bottom-0 text-start text-md-center w-100">© 2021. All Rights Reserved.</a>
+        </div>
       </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
